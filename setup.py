@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup (
     name='img2pdf',
-    version='1.0.0.dev0',
+    version='1.0.0',
     author = "Johannes 'josch' Schauer",
     description = "Convert images to PDF via direct JPEG inclusion.",
     long_description = open('README.md').read(),
