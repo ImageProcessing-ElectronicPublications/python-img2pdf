@@ -1,0 +1,56 @@
+.TH Img2PDF 1 "13 Dec 2017" "1.0.0" "User Manual"
+.SH DESCRIPTION
+ img2pdf
+ Lossless conversion of images to PDF without unnecessarily
+ re-encoding JPEG andJPEG2000 files. Thus, no loss of quality
+ and no unnecessary large output file.
+.SH USAGE
+\fBimg2pdf\fP [\fB-h\fP] [\fB-o\fP out] [\fB-d\fP dpi] [\fB-t\fP title] [\fB-a\fP author] [\fB-c\fP creator] [\fB-p\fP producer] [\fB-r\fP creationdate] [\fB-m\fP moddate] [\fB-s\fP subject] [\fB-k\fP kw [kw ...]] [\fB-C\fP colorspace] [\fB-v\fP] infile [infile ...]
+.SH OPTIONS
+positional arguments:
+.TP
+infile
+input file(s)
+.PP
+optional arguments:
+.TP
+\fB-h\fP, \fB--help\fP
+show this help message and exit
+.TP
+\fB-o\fP out, \fB--output\fP out
+output file (default: stdout)
+.TP
+\fB-d\fP dpi, \fB--dpi\fP dpi
+dpi for pdf output (default: 96.0)
+.TP
+\fB-t\fP title, \fB--title\fP title
+title for metadata
+.TP
+\fB-a\fP author, \fB--author\fP author
+author for metadata
+.TP
+\fB-c\fP creator, \fB--creator\fP creator
+creator for metadata
+.TP
+\fB-p\fP producer, \fB--producer\fP producer
+producer for metadata
+.TP
+\fB-r\fP creationdate, \fB--creationdate\fP creationdate
+creation date for metadata in YYYY-MM-DDTHH:MM:SS format
+.TP
+\fB-m\fP moddate, \fB--moddate\fP moddate
+modification date for metadata in YYYY-MM-DDTHH:MM:SS format
+.TP
+\fB-s\fP subject, \fB--subject\fP subject
+subject for metadata
+.TP
+\fB-k\fP kw [kw ...], \fB--keywords\fP kw [kw ...]
+keywords for metadata
+.TP
+\fB-C\fP colorspace, \fB--colorspace\fP colorspace
+force PIL colorspace (one of: RGB, L, 1)
+.TP
+\fB-v\fP, \fB--verbose\fP
+verbose mode
+.SH SEE ALSO
+ pdfwatermark(1)
